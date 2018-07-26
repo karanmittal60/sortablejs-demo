@@ -63,6 +63,7 @@ class Main extends Component {
                     console.log("Rect called");
                     var order = sortable.toArray().map(data => {
                         const el = data.split('||');
+                        // return  el[0];
                         return { dataId: el[0], img: el[1] };
                     });
                     localStorage.setItem(sortable.options.group.name, JSON.stringify(order));
@@ -89,6 +90,7 @@ class Main extends Component {
                     console.log('Square')
                     var order = sortable.toArray().map(data => {
                         const el = data.split('||');
+                        // return el[0];
                         return { dataId: el[0], img: el[1] };
                     });
                     localStorage.setItem(sortable.options.group.name, JSON.stringify(order));
